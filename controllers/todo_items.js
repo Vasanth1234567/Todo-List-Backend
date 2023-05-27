@@ -1,4 +1,7 @@
 const getAllTodoItems=(request,response)=>{
     response.send("Hello this is controller")
 }
-module.exports={getAllTodoItems}
+const createANewTodoItem = (request,response)=>{
+    response.json(request.body);
+}
+module.exports={getAllTodoItems,createANewTodoItem}
